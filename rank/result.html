@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Result</title>
+  <link rel="stylesheet" href="styleE.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">📊 Rank Predictor</div>
+  </header>
+  <div class="container glass">
+    <h1>📊 Prediction Result</h1>
+    <div id="result" class="card"></div>
+
+    <div class="progress-container">
+      <label>Percentage:</label>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progressBar"></div>
+      </div>
+    </div>
+
+    <canvas id="pieChart" width="300" height="300"></canvas>
+
+    <div id="history" class="card"></div>
+
+    <div class="buttons">
+      <button onclick="window.location.href='index.html'">🔁 New Prediction</button>
+      <button onclick="clearHistory()">🧹 Clear History</button>
+      <button onclick="exportToCSV()">📄 Export CSV</button>
+      <button onclick="toggleDarkMode()">🌙 Toggle Mode</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer class="footer-bar">
+  <div class="footer-content">
+    <p>© 2025 Rank Predictor | Developed by <strong>Anuj Chhetri</strong></p>
+    <p>Contact: 9547080721 | Email: <a href="mailto:anujchhetri261@gmail.com">anujchhetri261@gmail.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
